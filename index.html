@@ -16,10 +16,12 @@
 </head>
 
 <body>
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <style>
+        #expandableDiv {
+            height: 100vh;
+        }
+
         .container h2 {
             margin-top: -8px;
             font-weight: 700;
@@ -260,12 +262,6 @@
     </style>
     <section class="materail1">
         <div class="container slapCont" id="expandableDiv">
-            <div class="row text-center">
-                <div class="col-md-6 mx-auto">
-                    <h2>Canvas Editor</h2>
-                </div>
-            </div>
-            <hr>
             <div class="row">
                 <div class="col-md-12">
                     <div class="row wrapper">
@@ -509,8 +505,6 @@
             </div>
         </div>
     </section>
-
-
     <!-- Modal -->
     <div class="modal fade" id="saveImg" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -539,7 +533,6 @@
             </div>
         </div>
     </div>
-
     <style>
         .modal-dialog {
             max-width: 1000px;
@@ -554,7 +547,6 @@
             overflow-y: auto;
         }
     </style>
-
     <!-- Imgs Modal -->
     <div class="modal fade" id="slctImgs" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -569,44 +561,44 @@
                     <div class="row" style="cursor: pointer;">
                         <div class="col-md-3 mb-3">
                             <div class="imgBx1">
-                                <img src="{{ asset('user-assets/new-imgs/Mask Group 42 (3).png') }}"
+                                <img src="https://w7.pngwing.com/pngs/212/521/png-transparent-long-sleeved-t-shirt-sticker-stickers-text-fashion-unisex.png"
                                     class="img-fluid canvas-img" alt=""
-                                    data-img-src="{{ asset('user-assets/new-imgs/Mask Group 42 (3).png') }}">
+                                    data-img-src="https://w7.pngwing.com/pngs/212/521/png-transparent-long-sleeved-t-shirt-sticker-stickers-text-fashion-unisex.png">
                             </div>
                         </div>
                         <div class="col-md-3 mb-3">
                             <div class="imgBx1">
-                                <img src="{{ asset('user-assets/new-imgs/Mask Group 42 (2).png') }}"
+                                <img src="https://i.pinimg.com/736x/48/73/50/4873506f8dd314ddce7261f5239a3d70.jpg"
                                     class="img-fluid canvas-img" alt=""
-                                    data-img-src="{{ asset('user-assets/new-imgs/Mask Group 42 (2).png') }}">
+                                    data-img-src="https://i.pinimg.com/736x/48/73/50/4873506f8dd314ddce7261f5239a3d70.jpg">
                             </div>
                         </div>
                         <div class="col-md-3 mb-3">
                             <div class="imgBx1">
-                                <img src="{{ asset('user-assets/new-imgs/Mask Group 42 (1).png') }}"
+                                <img src="https://pnghq.com/wp-content/uploads/pnghq.com-skull-sticker-transparent-png.png"
                                     class="img-fluid canvas-img" alt=""
-                                    data-img-src="{{ asset('user-assets/new-imgs/Mask Group 42 (1).png') }}">
+                                    data-img-src="https://pnghq.com/wp-content/uploads/pnghq.com-skull-sticker-transparent-png.png">
                             </div>
                         </div>
                         <div class="col-md-3 mb-3">
                             <div class="imgBx1">
-                                <img src="{{ asset('user-assets/new-imgs/Mask Group 41 (2).png') }}"
+                                <img src="https://images.vexels.com/content/158488/preview/cool-sticker-2da0b4.png"
                                     class="img-fluid canvas-img" alt=""
-                                    data-img-src="{{ asset('user-assets/new-imgs/Mask Group 41 (2).png') }}">
+                                    data-img-src="https://images.vexels.com/content/158488/preview/cool-sticker-2da0b4.png">
                             </div>
                         </div>
                         <div class="col-md-3 mb-3">
                             <div class="imgBx1">
-                                <img src="{{ asset('user-assets/new-imgs/Mask Group 42 (3).png') }}"
+                                <img src="https://i.pinimg.com/564x/a5/67/7b/a5677bb4bf1eebc03eaf93c9178e3f66.jpg"
                                     class="img-fluid canvas-img" alt=""
-                                    data-img-src="{{ asset('user-assets/new-imgs/Mask Group 42 (3).png') }}">
+                                    data-img-src="https://i.pinimg.com/564x/a5/67/7b/a5677bb4bf1eebc03eaf93c9178e3f66.jpg">
                             </div>
                         </div>
                         <div class="col-md-3 mb-3">
                             <div class="imgBx1">
-                                <img src="{{ asset('user-assets/new-imgs/Mask Group 42 (2).png') }}"
+                                <img src="https://ih1.redbubble.net/image.550298912.0681/st,small,507x507-pad,600x600,f8f8f8.u3.jpg"
                                     class="img-fluid canvas-img" alt=""
-                                    data-img-src="{{ asset('user-assets/new-imgs/Mask Group 42 (2).png') }}">
+                                    data-img-src="https://ih1.redbubble.net/image.550298912.0681/st,small,507x507-pad,600x600,f8f8f8.u3.jpg">
                             </div>
                         </div>
                     </div>
@@ -620,13 +612,10 @@
             </div>
         </div>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.2.4/fabric.min.js"></script>
     <script src="https://unpkg.com/fabric@5.2.4/dist/eraser_brush.mixin.js"></script>
-
     <script>
         // Initialize Fabric.js canvas
         var canvas = new fabric.Canvas('myCanvas');
@@ -1449,7 +1438,6 @@
         }
         saveState();
     </script>
-
 </body>
 
 </html>
